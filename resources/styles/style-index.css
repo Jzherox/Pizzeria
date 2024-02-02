@@ -255,7 +255,7 @@ section div {
   }
   
   .card-front {
-    background: url("/resources/images/pizza-pepperoni.jpg");
+    background: url("resources/images/pizza-pepperoni.jpg");
     background-position: center;
     background-size: contain;
     color: #fff;
@@ -283,43 +283,43 @@ section div {
   }
 
   #pizza-ham .card-front {
-    background: url("/resources/images/pizza-jamon.jpg");
+    background: url("resources/images/pizza-jamon.jpg");
     background-position: center;
     background-size: contain;
   }
 
   #pizza-pineapple .card-front {
-    background: url("/resources/images/pizza-piña.jpg");
+    background: url("resources/images/pizza-piña.jpg");
     background-position: center;
     background-size: contain;
   }
   #pizza-cheese .card-front {
-    background: url("/resources/images/pizza-queso.jpg");
+    background: url("resources/images/pizza-queso.jpg");
     background-position: center;
     background-size: contain;
   }
   #pizza-margarite .card-front {
-    background: url("/resources/images/pizza-margarita.jpg");
+    background: url("resources/images/pizza-margarita.jpg");
     background-position: center;
     background-size: contain;
   }
   #pizza-marinade .card-front {
-    background: url("/resources/images/pizza-marinada.jpg");
+    background: url("resources/images/pizza-marinada.jpg");
     background-position: center;
     background-size: contain;
   }
   #pizza-mushrooms .card-front {
-    background: url("/resources/images/pizza-champiñones.jpg");
+    background: url("resources/images/pizza-champiñones.jpg");
     background-position: center;
     background-size: contain;
   }
   #pizza-ham .card-front {
-    background: url("/resources/images/pizza-jamon.jpg");
+    background: url("resources/images/pizza-jamon.jpg");
     background-position: center;
     background-size: contain;
   }
   #pizza-pepper .card-front {
-    background: url("/resources/images/pizza-pimienta.jpg");
+    background: url("resources/images/pizza-pimienta.jpg");
     background-position: center;
     background-size: contain;
   }

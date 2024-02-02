@@ -1,0 +1,540 @@
+* {
+    padding: 0; margin: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+body {
+    background: #4F200D;
+}
+
+.header {
+    height: 70px; width: 100%;
+    position: fixed;
+    background: #4F200D;
+    display: flex; justify-content: center; align-items: center;
+    z-index: 999;
+}
+
+.header-container {
+    color: #fff;
+    height: 90%; width: 80%;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-direction: row;
+}
+
+.logo--name {
+    display: flex; justify-content: center; align-items: center;
+    flex-direction: row;
+}
+
+.header-container img {
+    height: 50px; width: 50px;
+    padding: 5px;
+}
+
+.buy-now {
+    color: #000;
+    background: #FFD93D;
+    border: none;
+    padding: 10px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(0deg);
+  }
+  
+  .buy-now::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: #ecbd00;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+
+  .buy-now:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+main {
+    height: auto; width: 100%;
+}
+
+section, .footer-section {
+    height: 100vh; width: 100%;
+    box-sizing: border-box;
+    padding: 80px 0 20px 0;
+    background: #000;
+    display: flex; justify-content: center; align-items: center;
+}
+
+section div {
+    height: 100%; width: 90%;
+    background: #FFD93D;
+}
+
+.home-section {
+    background: no-repeat url(https://static.vecteezy.com/system/resources/previews/024/645/837/non_2x/pepperoni-pizza-on-grunge-wooden-background-or-table-with-right-copy-space-cooking-ingredient-with-tomato-mushroom-and-thai-sausage-this-food-baked-by-use-charcoal-stove-free-photo.jpg);
+    background-position: center 70px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.home-bright {
+    height: 100vh; width: 100%;
+    background: #00000070;
+    padding: 70px;
+    display: flex; justify-content: end; align-items: center;
+    box-sizing: border-box;
+}
+
+.home-info {
+    height: auto; width: auto;
+    color: #fff;
+    background: transparent;
+    display: flex; justify-content: center; flex-direction: column;
+    backdrop-filter: blur(10px);
+    height: 300px; width: 400px;
+    padding: 20px;
+}
+
+.subtitulo-menu {
+    padding: 10px; margin: 0 0 10px 0;
+    height: auto; width: 100%;
+    background: #fff8ce;
+    border-radius: 10px;
+    display: flex; justify-content: center; align-items: center;
+}
+
+.subtitulo {
+    color: #fff;
+    background: transparent;
+    font-size: 2em;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.texto {
+    font-weight: lighter;
+    margin: 0 0 10px 0;
+}
+
+.home-info .buy-now {
+    width: fit-content;
+}
+
+.menu-section {
+    background: url(https://images.unsplash.com/photo-1506968430777-bf7784a87f23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVzYSUyMGRlJTIwbWFkZXJhfGVufDB8fDB8fHww&w=1000&q=80);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.menu {
+    box-sizing: border-box;
+    padding: 0 0 20px 0;
+    display: flex; justify-content: center; align-items: center; flex-direction: column;
+    background: #fff1b73b;
+    backdrop-filter: blur(10px);
+}
+
+.menu-container {
+    background: none;
+    display: flex; justify-content: center; align-items: center; flex-direction: row;
+    overflow: hidden;
+}
+
+.menu-personality {
+    background: #ffffff90;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 90%; width: 40%;
+    display: flex; justify-content: center; align-items: center; flex-direction: column;
+}
+
+.menu-personality img {
+    height: 160px; width: 160px;
+    padding: 5px; margin: 5px;
+    background: #d1d1d1;
+    transition: all .5s ease-in-out;
+    transform: rotate(0deg);
+}
+
+.menu-personality img:hover {
+    transition: all .5s ease-in-out;
+    transform: rotate(2deg);
+}
+
+.menu-personality h3 {
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    background: #FFD93D;
+}
+
+.menu-personality h4 {
+    font-weight: lighter;
+    margin: 5px 5px 10px 5px;
+}
+
+.types-of-pizzas {
+    display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap;
+    height: auto; width: auto;
+    background: transparent;
+}
+
+.descrip-pizza {
+    display: flex; justify-content: center; align-items: center; flex-direction: column;
+    background: #ffff;
+    height: auto; width: auto;
+    box-sizing: border-box;
+    padding: 5px; margin: 5px;
+}
+
+.descrip-pizza h4 {
+    padding: 10px 0 0;
+}
+
+.descrip-pizza img {
+    height: 160px; width: 160px;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+    background: #fff;    
+}
+
+.card {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 5px; margin: 5px;
+    display: flex; justify-content: center; align-items: center; flex-direction: column;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    perspective: 1000px;
+  }
+
+  .card h4 {
+    padding: 10px 0 0;
+  }
+  
+  .card-inner {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    backface-visibility: hidden;
+  }
+  
+  .card-front {
+    background: url("/resources/images/pizza-pepperoni.jpg");
+    background-position: center;
+    background-size: contain;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+  }
+  
+  .card-back {
+    background: url(https://img.freepik.com/fotos-premium/papel-arrugado-blanco-textura-papel_213524-50.jpg);
+    color: #212121;
+    display: flex; justify-content: start; align-items: center; flex-direction: column;
+    font-size: 24px;
+    transform: rotateY(180deg);
+  }
+
+  .card-back h5 {
+    padding: 5px;
+  }
+
+  .card-back li {
+    font-weight: lighter;
+  }
+
+  #pizza-ham .card-front {
+    background: url("/resources/images/pizza-jamon.jpg");
+    background-position: center;
+    background-size: contain;
+  }
+
+  #pizza-pineapple .card-front {
+    background: url("/resources/images/pizza-piña.jpg");
+    background-position: center;
+    background-size: contain;
+  }
+  #pizza-cheese .card-front {
+    background: url("/resources/images/pizza-queso.jpg");
+    background-position: center;
+    background-size: contain;
+  }
+  #pizza-margarite .card-front {
+    background: url("/resources/images/pizza-margarita.jpg");
+    background-position: center;
+    background-size: contain;
+  }
+  #pizza-marinade .card-front {
+    background: url("/resources/images/pizza-marinada.jpg");
+    background-position: center;
+    background-size: contain;
+  }
+  #pizza-mushrooms .card-front {
+    background: url("/resources/images/pizza-champiñones.jpg");
+    background-position: center;
+    background-size: contain;
+  }
+  #pizza-ham .card-front {
+    background: url("/resources/images/pizza-jamon.jpg");
+    background-position: center;
+    background-size: contain;
+  }
+  #pizza-pepper .card-front {
+    background: url("/resources/images/pizza-pimienta.jpg");
+    background-position: center;
+    background-size: contain;
+  }
+
+.info-section {
+    background: #1B1D1E;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    padding: 20px;
+}
+
+.title-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFD93D;
+    margin: 10px;
+    height: fit-content;
+}
+
+.title-about h2 {
+    padding: 10px;
+    color: #000;
+}
+
+.about-our-pizzas {
+    background: #ffffff70;
+    backdrop-filter: blur(10px);
+}
+
+.about-our-pizzas h3 {
+    padding: 20px;
+    color: #fff;
+}
+
+.footer-section {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.footer-last-section {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 80px 40px 20px;
+    background: url(https://png.pngtree.com/thumb_back/fw800/background/20210207/pngtree-gray-texture-minimalist-background-image_557035.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info-contact, .form-orden-now {
+    width: 100%;
+    margin: 10px;
+    background: #ffffff30;
+    backdrop-filter: blur(10px);
+    color: #fff;
+}
+
+.info-contact {
+    color: #fff;
+    background: transparent;
+    backdrop-filter: none;
+    box-sizing: border-box;
+    padding: 40px 20px 40PX 0;
+}
+
+.info-contact h2 {
+    background: none;
+    padding: 10px; 
+    width: 100%;
+    border: #fff solid 2px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.contact-num-div {
+    background: transparent;
+    display: flex; justify-content: start; align-items: center; flex-direction: row;
+    height: auto; width: auto;
+}
+
+.info-contact .contacts-icons {
+    display: flex; flex-direction: column;
+    height: 70px; width: 70px;
+    margin: 20px;
+}
+
+.form-orden-now {
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: auto; width: 50%;
+    padding: 10px;
+    overflow: hidden;
+    display: flex; justify-content: center; align-items: center; flex-direction: column;
+}
+
+.two-inputs {
+    display: flex; flex-direction: row;
+    padding: 0; 
+    background: none;
+}
+
+.input--two {
+    background: none;
+    padding: 0; margin-right: 8px;
+    display: flex; flex-direction: column;
+}
+
+.input--two:nth-child(2) {
+    margin-right: 0;
+}
+
+.input--two input {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.subtitulo-orden {
+    height: auto; width: 95%;
+    display: flex; justify-content: center; align-items: center;
+    padding: 10px; margin-bottom: 10px;
+    border-radius: 10px;
+    background: #00000070;
+
+}
+
+.form-orden-now h3 {
+    display: flex; justify-content: start; align-items: start;
+    text-align: start;
+    width: 90%;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+.input-name, .input-location, .input-email {
+    display: flex;
+    background: #00000040;
+    box-sizing: border-box;
+    padding: 5px; margin: 8px;
+    color: #fff;
+    width: 90%;
+    border-radius: 5px;
+    border: transparent solid 1px;
+    transition: all .5s;
+}
+
+.input-name:focus, .input-location:focus, .input-coment:focus, .input-email:focus{
+    outline-style: none;
+    border-bottom: #ff0000 solid 1px;
+    box-shadow: #ffffff50 0px 0px 10px ;
+    transition: all .5s;
+}
+
+.input-coment {
+    display: flex; justify-content: start; align-items: start;
+    background: #00000040;
+    height: 70px; width: 90%;
+    box-sizing: border-box;
+    padding: 5px; margin: 8px;
+    color: #fff;
+    border-radius: 5px;
+    border-bottom: transparent solid 1px;
+    resize: none;
+}
+
+.input-coment::-webkit-scrollbar {
+    background: #c7c7c7;
+}
+
+.input-coment::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.input-coment::-webkit-scrollbar-thumb:hover {
+    background: #707070;
+}
+
+.input-submit {
+    display: flex; justify-content: center; align-items: center;
+    font-weight: bold;
+    font-size: 1em;
+    background: #00000070;
+    padding: 5px; margin: 5px;
+    color: #fff;
+    outline-style: none;
+    width: 30%;
+    border-radius: 20px;
+    border: none;
+    transition: all .5s;
+}
+
+.input-submit:hover {
+    cursor: pointer;
+    transform: scale(.98);
+    transition: all .1s;
+    background: #00000090;
+}
+
+.input-submit:active {
+    transform: scale(1);
+    background: #414141;
+}
+
+.footer {
+    height: 50px; width: 100%;
+    background: #1b1b1b;
+    display: flex; justify-content: center; align-items: center;
+}
+
+.footer-container {
+    box-sizing: border-box;
+    font-size: .8em;
+    padding: 10px 0;
+    color: #9c9c9c;
+    height: 100%; width: 90%;
+}
